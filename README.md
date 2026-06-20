@@ -262,3 +262,4 @@ the onboard sensors (`IMU1`, `Barometer1`, `Magnetometer1`, `Battery`), and the 
 ## Troubleshooting
 
 - there is a common crash that can occur when doing certain things while the connection to the sim is live, it is better to close the active connection python first if you experience game crash/stall.
+- when connecting to sim running on Windows via WSL2 you need to change the host from 127.0.0.1 to 172.23.240.1

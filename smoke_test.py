@@ -93,7 +93,8 @@ async def run(address: str, check_easy: bool):
 
 def main():
     ap = argparse.ArgumentParser(description="End-to-end smoke test against a live sim.")
-    ap.add_argument("--address", default="127.0.0.1")
+    ap.add_argument("--address", default="127.0.0.1") # Linux
+    # ap.add_argument("--address", default="172.23.240.1") # Windows WSL2
     ap.add_argument("--easy", action="store_true",
                     help="also exercise the EASY-only ground-truth / GPS APIs")
     args = ap.parse_args()
